@@ -31,16 +31,13 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  align-items: stretch;
+  align-items: center;
   justify-content: center;
-  align-content: space-between;
-  margin-left: 20vw;
-  margin-right: 20vw;
-  margin-bottom: 4vw;
+  align-content: space-around;
   border-style: dashed;
-  padding: 16px;
-  width: auto;
+  padding: 1em;
   height: auto;
+  width: 80%;
 }
 
 .bookShelf {
@@ -54,24 +51,19 @@
   border-style: solid;
   border-width: thick;
   border-color: black;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  padding-left: 2vw;
-  padding-right: 2vw;
-  width: max-content;
-  max-width: 90vw;
-  height: auto;
-  min-width: 15vw;
-  min-height: 10vw;
+  min-height: 10em;
+  min-width: 50%;
+  padding: 1em;
 }
 
 .bookShelf-inner {
   transform-style: preserve-3d;
   display: flex;
-  align-items: stretch;
-  width: 100%;
+  align-items: center;
+  justify-content: center;
   transition: transform 0.8s;
   will-change: transform;
+  width: 90%;
 }
 
 .bookShelf:hover .bookShelf-inner {
@@ -82,6 +74,8 @@
 .bookShelf-back {
   width: 100%;
   flex: 0 0 auto;
+  flex-direction: row;
+  align-items: center;
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
 }
@@ -90,35 +84,43 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  align-content: center;
   vertical-align: middle;
 }
 
 .bookShelf-back {
   transform: rotateY(180deg);
-  margin-left: -100%;
-  margin-right: 100%;
   display: flex;
   flex-flow: row;
   align-items: center;
   align-content: center;
-  justify-content: space-between;
+  justify-content: center;
+  margin-left: -100%;
 }
 
-.book {
-  margin-top: 3vw;
-  margin-bottom: 3vw;
-  margin-left: 3vw;
-  margin-right: 3vw;
-  padding: 2vw;
+/* .book {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  padding: 0.5em;
   border-style: double;
   border-color: red;
   align-content: center;
   justify-content: center;
   transform: rotate(-90deg);
-  height: auto;
-  font-size: 100%;
+  height: 100%;
+  font-size: 70%;
   box-sizing: content-box;
-}
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  display: flex;
+  line-height: 1em;
+  max-height: 5em;
+  min-height: 3em;
+  min-width: 6em;
+  max-width: 10em;
+} */
 
 .App-link {
   color: #61dafb;
