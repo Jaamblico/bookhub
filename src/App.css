@@ -27,6 +27,10 @@
   color: black;
 }
 
+/* #root > div > div > div {
+  background-color: red;
+} */
+
 .bookShelf-inner {
   transform-style: preserve-3d;
   display: flex;
@@ -40,9 +44,9 @@
   width: 90%;
 }
 
-.bookShelf:hover .bookShelf-inner {
+/* .bookShelf:hover .bookShelf-inner {
   transform: rotateY(180deg);
-}
+} */
 
 .bookShelf-front,
 .bookShelf-back {

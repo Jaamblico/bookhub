@@ -11,7 +11,7 @@ function App() {
           <h1 className="titulo"> [ BookHub ] </h1>
         </header>
         <Library>
-          <Bookshelf>
+          <Bookshelf className="bookShelf">
             <div className="bookShelf-inner">
               <div className="bookShelf-front">
                 <h2>HISTORIA ANTIGUA I</h2>
