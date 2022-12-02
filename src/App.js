@@ -1,6 +1,9 @@
 import "./App.css";
 import { Library } from "./Components/Library";
 import { Bookshelf } from "./Components/Bookshelf";
+import {BookshelfInner} from "./Components/Bookshelf";
+import {BookshelfFront} from "./Components/Bookshelf";
+import {BookshelfBack} from "./Components/Bookshelf"
 import { Book } from "./Components/Book";
 
 function App() {
@@ -12,16 +15,14 @@ function App() {
         </header>
         <Library>
           <Bookshelf className="bookShelf">
-            <div className="bookShelf-inner">
-              <div className="bookShelf-front">
-                <h2>HISTORIA ANTIGUA I</h2>
-              </div>
-              <div className="bookShelf-back">
+            <BookshelfInner>
+              <BookshelfFront> <h2>HISTORIA ANTIGUA I</h2> </BookshelfFront>
+              <BookshelfBack>
                 <Book Content="Decadencia y Caida del Imperio Romano I (E. Gibbon)" />
                 <Book Content="Decadencia y Caida del Imperio Romano II (E. Gibbon)" />
                 <Book Content="Decadencia y Caida del Imperio Romano III (E. Gibbon)" />
-              </div>
-            </div>
+              </BookshelfBack>
+            </BookshelfInner>
           </Bookshelf>
         </Library>
       </div>

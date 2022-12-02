@@ -31,7 +31,7 @@
   background-color: red;
 } */
 
-.bookShelf-inner {
+/* .bookShelf-inner {
   transform-style: preserve-3d;
   display: flex;
   flex-wrap: wrap;
@@ -42,13 +42,13 @@
   transition: transform 0.8s;
   will-change: transform;
   width: 90%;
-}
+} */
 
 /* .bookShelf:hover .bookShelf-inner {
   transform: rotateY(180deg);
 } */
 
-.bookShelf-front,
+/* .bookShelf-front,
 .bookShelf-back {
   width: 100%;
   flex: 0 0 auto;
@@ -56,18 +56,18 @@
   flex-wrap: wrap;
   align-content: space-evenly;
   align-items: center;
-  -webkit-backface-visibility: hidden; /* Safari */
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-}
+} */
 
-.bookShelf-front {
+/* .bookShelf-front {
   display: flex;
   align-items: center;
   justify-content: center;
   align-content: center;
-}
+} */
 
-.bookShelf-back {
+/* .bookShelf-back {
   transform: rotateY(180deg);
   display: flex;
   flex-flow: row;
@@ -79,7 +79,7 @@
   justify-content: center;
   margin-left: -100%;
   row-gap: 0.5em;
-}
+} */
 
 .App-link {
   color: #61dafb;

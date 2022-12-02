@@ -1,5 +1,52 @@
 import styled from "styled-components";
 
+export const BookshelfInner = styled.div`
+transform-style: preserve-3d;
+display: flex;
+flex-wrap: wrap;
+flex-basis: auto;
+align-items: center;
+align-content: space-evenly;
+justify-content: center;
+transition: transform 0.8s;
+will-change: transform;
+width: 90%;
+`;
+
+// width: 100%;
+// flex: 0 0 auto;
+// flex-direction: row;
+// flex-wrap: wrap;
+// align-content: space-evenly;
+// align-items: center;
+// -webkit-backface-visibility: hidden;
+// backface-visibility: hidden;
+
+export const BookshelfFront = styled.div`
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+align-content: center;
+backface-visibility: hidden;
+`;
+
+export const BookshelfBack = styled.div`
+width: 100%;
+transform: rotateY(180deg);
+display: flex;
+flex-flow: row;
+flex-wrap: wrap;
+align-items: center;
+align-content: space-evenly;
+flex-basis: auto;
+flex-shrink: 3;
+justify-content: center;
+margin-left: -100%;
+row-gap: 0.5em;
+backface-visibility: hidden;
+`;
+
 export const Bookshelf = styled.div`
   background-color: transparent;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
@@ -15,7 +62,7 @@ export const Bookshelf = styled.div`
   min-height: 10em;
   min-width: 50%;
   padding: 1em;
-  &:active .bookShelf-inner {
+  &:active ${BookshelfInner} {
     transform: rotateY(180deg);
   }
 `;
