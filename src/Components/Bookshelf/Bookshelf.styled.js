@@ -67,7 +67,6 @@ export const Bookshelf = styled.div`
   border-width: thick;
   border-color: black;
   min-height: 10em;
-  min-width: 50%;
   padding: 1em;
   &:active ${BookshelfInner} {
     transform: rotateY(180deg);

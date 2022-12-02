@@ -1,9 +1,6 @@
 import "./App.css";
 import { Library } from "./Components/Library";
 import { Bookshelf } from "./Components/Bookshelf";
-// import {BookshelfInner} from "./Components/Bookshelf";
-// import {BookshelfFront} from "./Components/Bookshelf";
-// import {BookshelfBack} from "./Components/Bookshelf"
 import { Book } from "./Components/Book";
 
 function App() {
@@ -18,6 +15,9 @@ function App() {
             <Book Content="Decadencia y Caida del Imperio Romano I (E. Gibbon)" />
             <Book Content="Decadencia y Caida del Imperio Romano II (E. Gibbon)" />
             <Book Content="Decadencia y Caida del Imperio Romano III (E. Gibbon)" />
+          </Bookshelf>
+          <Bookshelf shelfName="Orientalismo">
+            <Book Content="Filosofías de la India (H. Zimmer)" />
           </Bookshelf>
         </Library>
       </div>
