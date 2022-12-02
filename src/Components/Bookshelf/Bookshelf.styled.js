@@ -13,6 +13,10 @@ will-change: transform;
 width: 90%;
 `;
 
+export const BookshelfTitle = styled.h2`
+margin: 0;
+`;
+
 // width: 100%;
 // flex: 0 0 auto;
 // flex-direction: row;
@@ -25,9 +29,12 @@ width: 90%;
 export const BookshelfFront = styled.div`
 width: 100%;
 display: flex;
-align-items: center;
+flex: 0 0 auto;
+flex-wrap: wrap;
+flex-direction: row;
 justify-content: center;
-align-content: center;
+align-items: center;
+align-content: space-evenly;
 backface-visibility: hidden;
 `;
 
