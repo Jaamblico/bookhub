@@ -1,20 +1,20 @@
 import styled from "styled-components";
 
 export const BookshelfInner = styled.div`
-transform-style: preserve-3d;
-display: flex;
-flex-wrap: wrap;
-flex-basis: auto;
-align-items: center;
-align-content: space-evenly;
-justify-content: center;
-transition: transform 0.8s;
-will-change: transform;
-width: 90%;
+  transform-style: preserve-3d;
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: auto;
+  align-items: center;
+  align-content: space-evenly;
+  justify-content: center;
+  transition: transform 0.8s;
+  will-change: transform;
+  width: 90%;
 `;
 
 export const BookshelfTitle = styled.h2`
-margin: 0;
+  font-size: 200%;
 `;
 
 // width: 100%;
@@ -27,31 +27,31 @@ margin: 0;
 // backface-visibility: hidden;
 
 export const BookshelfFront = styled.div`
-width: 100%;
-display: flex;
-flex: 0 0 auto;
-flex-wrap: wrap;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-align-content: space-evenly;
-backface-visibility: hidden;
+  width: 100%;
+  display: flex;
+  flex: 0 0 auto;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: space-evenly;
+  backface-visibility: hidden;
 `;
 
 export const BookshelfBack = styled.div`
-width: 100%;
-transform: rotateY(180deg);
-display: flex;
-flex-flow: row;
-flex-wrap: wrap;
-align-items: center;
-align-content: space-evenly;
-flex-basis: auto;
-flex-shrink: 3;
-justify-content: center;
-margin-left: -100%;
-row-gap: 0.5em;
-backface-visibility: hidden;
+  width: 100%;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: space-evenly;
+  flex-basis: auto;
+  flex-shrink: 3;
+  justify-content: center;
+  margin-left: -100%;
+  row-gap: 0.5em;
+  backface-visibility: hidden;
 `;
 
 export const Bookshelf = styled.div`
