@@ -9,6 +9,7 @@ export const Library = styled.div`
   align-content: space-around;
   border-style: dashed;
   padding: 1em;
+  margin: 25vh 33px 0px 33px;
   height: auto;
   width: auto;
 `;

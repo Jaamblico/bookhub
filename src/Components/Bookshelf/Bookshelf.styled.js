@@ -68,7 +68,7 @@ export const Bookshelf = styled.div`
   border-color: black;
   min-height: 10em;
   padding: 1em;
-  &:active ${BookshelfInner} {
+  &:hover ${BookshelfInner} {
     transform: rotateY(180deg);
   }
 `;

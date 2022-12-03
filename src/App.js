@@ -17,7 +17,10 @@ function App() {
             <Book Content="Decadencia y Caida del Imperio Romano III (E. Gibbon)" />
           </Bookshelf>
           <Bookshelf shelfName="Orientalismo">
-            <Book Content="Filosofías de la India (H. Zimmer)" />
+            <Book
+              href="https://budismolibre.org/docs/libros_budistas/Heinrich_Zimmer_Filosofia_de_la_India.pdf"
+              Content="Filosofías de la India (H. Zimmer)"
+            />
           </Bookshelf>
         </Library>
       </div>
